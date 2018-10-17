@@ -1,7 +1,7 @@
 #This is for Openshift
 
 From centos:latest
-WORKDIR /tmp
+#WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
 RUN yum update -y
