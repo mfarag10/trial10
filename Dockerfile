@@ -1,14 +1,14 @@
 #This is for Openshift
 
 From centos:latest
-
+WORKDIR /root
 LABEL maintainer="farag@email.com"
 
 RUN yum update -y
 
 COPY xampp-linux-x64-7.2.2-0-installer.run /root
 
-RUN cd /root && \chmod +x xampp-linux-x64-7.2.2-0-installer.run && \
+RUN chmod +x xampp-linux-x64-7.2.2-0-installer.run && \
     ./xampp-linux-x64-7.2.2-0-installer.run --mode unattended && \
     cd /opt/lampp/etc && \
    # mv httpd.conf httpd.conf.old80 && \
