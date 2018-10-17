@@ -13,7 +13,7 @@ RUN cd /root && \chmod +x xampp-linux-x64-7.2.2-0-installer.run && \
     cd /opt/lampp/etc && \
    # mv httpd.conf httpd.conf.old80 && \
     chmod +x /opt/lampp/manager-linux-x64.run && \
-      /opt/lampp/manager-linux-x64.run
+     # /opt/lampp/manager-linux-x64.run
 
 #COPY /opt/lampp/etc/httpd.conf /opt/lampp/etc/
 
