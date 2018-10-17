@@ -4,6 +4,10 @@ From centos:latest
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
+RUN groupadd -g 999 appuser && \
+    useradd -r -u 999 -g appuser appuser
+USER appuser
+
 RUN yum update -y && \ 
 yum install -y net-tools && \
 yum install -y httpd && \
