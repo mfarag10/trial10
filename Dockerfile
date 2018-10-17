@@ -8,7 +8,7 @@ RUN yum update -y && \
 yum install -y net-tools && \
 yum install -y httpd
 
-COPY /docks/xampp-linux-x64-7.2.2-0-installer.run .
+COPY //docks/xampp-linux-x64-7.2.2-0-installer.run .
 
 RUN chmod +x xampp-linux-x64-7.2.2-0-installer.run && \
     ./xampp-linux-x64-7.2.2-0-installer.run --mode unattended && \
