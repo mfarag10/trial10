@@ -5,7 +5,7 @@ From centos:latest
 LABEL maintainer="farag@email.com"
 
 RUN groupadd -g 999 appuser && \
-    useradd -r -u 999 -g appuser appuser
+    useradd -r -u 1200 -g appuser appuser
 USER appuser
 
 RUN yum update -y && \ 
