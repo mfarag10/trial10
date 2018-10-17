@@ -7,11 +7,11 @@ LABEL maintainer="farag@email.com"
 RUN yum update -y && \ 
 yum install -y net-tools && \
 yum install -y httpd && \
-mkdir /docks
+mkdir /home/mohamed.farag-redingtongulf.com/docks
 
 #COPY //docks/xampp-linux-x64-7.2.2-0-installer.run .
 ADD https://www.apachefriends.org/xampp-files/7.2.2/xampp-linux-x64-7.2.2-0-installer.run /docks
-RUN cd /docks/ && \
+RUN cd /home/mohamed.farag-redingtongulf.com/docks && \
 chmod +x xampp-linux-x64-7.2.2-0-installer.run && \
     ./xampp-linux-x64-7.2.2-0-installer.run --mode unattended && \
     cd /opt/lampp/etc && \
