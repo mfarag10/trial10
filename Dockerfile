@@ -6,7 +6,7 @@ LABEL maintainer="farag@email.com"
 
 RUN yum update -y
 
-COPY xampp-linux-x64-7.2.2-0-installer.run
+COPY xampp-linux-x64-7.2.2-0-installer.run /root
 
 RUN chmod +x xampp-linux-x64-7.2.2-0-installer.run && \
     ./xampp-linux-x64-7.2.2-0-installer.run --mode unattended && \
