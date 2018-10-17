@@ -1,6 +1,6 @@
 #This is for Openshift
 
-From RHEL:7
+From centos:latest
 
 LABEL maintainer="farag@email.com"
 
