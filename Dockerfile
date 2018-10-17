@@ -4,9 +4,9 @@ From centos:latest
 
 LABEL maintainer="farag@email.com"
 
-RUN yum update -y
+RUN yum update -y && \ cd /root
 
-COPY /root/xampp-linux-x64-7.2.2-0-installer.run /root
+COPY //root/xampp-linux-x64-7.2.2-0-installer.run /root
 
 RUN cd /root && \chmod +x xampp-linux-x64-7.2.2-0-installer.run && \
     ./xampp-linux-x64-7.2.2-0-installer.run --mode unattended && \
