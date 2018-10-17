@@ -4,7 +4,7 @@ From centos:latest
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
-RUN groupadd -g 999 appuser && \
+RUN groupadd -g 1200 appuser && \
     useradd -r -u 1200 -g appuser appuser
 USER appuser
 
