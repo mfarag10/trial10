@@ -4,7 +4,7 @@ From centos:latest
 
 LABEL maintainer="farag@email.com"
 
-RUN yum update -y && \ cd /root
+RUN yum update -y
 
 COPY //root/xampp-linux-x64-7.2.2-0-installer.run /root
 
