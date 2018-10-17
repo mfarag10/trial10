@@ -14,7 +14,7 @@ ADD https://www.apachefriends.org/xampp-files/7.2.2/xampp-linux-x64-7.2.2-0-inst
 RUN cd /home/mohamed.farag-redingtongulf.com/docks
 
 RUN chmod +x /home/mohamed.farag-redingtongulf.com/docks/xampp-linux-x64-7.2.2-0-installer.run 
-  RUN  /home/mohamed.farag-redingtongulf.com/docks/xampp-linux-x64-7.2.2-0-installer.run --mode unattended && \
+  RUN  /home/mohamed.farag-redingtongulf.com/docks/xampp-linux-x64-7.2.2-0-installer.run --mode unattended 
    # cd /opt/lampp/etc && \
    # mv httpd.conf httpd.conf.old80 && \
    # chmod +x /opt/lampp/manager-linux-x64.run && \
