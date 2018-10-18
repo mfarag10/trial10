@@ -6,7 +6,7 @@ From scratch
 LABEL maintainer="farag@email.com"
 
 CMD ["/bin/bash"]
-RUN  yum update -y && \ 
+#RUN  yum update -y && \ 
 #yum install -y net-tools && \
 #yum install -y httpd && \
  RUN mkdir -p /home/mohamed.farag-redingtongulf.com/docks
