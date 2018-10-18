@@ -1,6 +1,6 @@
 #This is for Openshift
 
-From centos:7
+From rhel:rhel7
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
