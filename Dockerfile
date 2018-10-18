@@ -17,7 +17,7 @@ RUN yum install -y sudo && \
 
 RUN su - userfarag -c "touch mine"
 
-CMD ["su", "-", "userfarag", "-c", "/bin/bash"]
+#CMD ["su", "-", "userfarag", "-c", "/bin/bash"]
 
 
 
