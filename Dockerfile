@@ -10,7 +10,8 @@ yum install -y net-tools && \
  yum install -y httpd
 
 RUN yum install -y sudo && \
-    adduser userfarag && \
+  #  adduser userfarag && \
+  useradd -d /home/userfarag -ms /bin/bash -g root -G sudo -p farag userfarag
     echo "userfarag ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/userfarag && \
     chmod 0440 /etc/sudoers.d/userfarag
 
