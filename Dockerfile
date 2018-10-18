@@ -5,8 +5,8 @@ From centos:7
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
-RUN   yum update -y && \ 
-yum install -y net-tools && \
+#RUN   yum update -y && \ 
+RUN yum install -y net-tools && \
  yum install -y httpd
 
 RUN yum install -y sudo && \
