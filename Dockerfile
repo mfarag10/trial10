@@ -6,7 +6,7 @@ From centos:7
 LABEL maintainer="farag@email.com"
 
 RUN   yum update -y && \ 
- install -y net-tools && \
+yum install -y net-tools && \
  yum install -y httpd && \
 
 RUN dnf install -y sudo && \
