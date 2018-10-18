@@ -5,10 +5,10 @@ From scratch
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
-CMD ["/bin/sh"]
-#RUN  yum update -y && \ 
-#yum install -y net-tools && \
-#yum install -y httpd && \
+
+RUN  yum update -y && \ 
+yum install -y net-tools && \
+yum install -y httpd && \
  RUN mkdir -p /home/mohamed.farag-redingtongulf.com/docks
 
 #COPY //docks/xampp-linux-x64-7.2.2-0-installer.run .
