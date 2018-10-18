@@ -16,7 +16,7 @@ RUN yum install -y sudo && \
     chmod 0440 /etc/sudoers.d/userfarag
     
     #RUN yum install -y httpd
-    RUN  systemctl start httpd
+    #RUN  systemctl start httpd
 
 #RUN su - userfarag
 
