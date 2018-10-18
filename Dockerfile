@@ -1,6 +1,6 @@
 #This is for Openshift
 
-From rhel:rhel7
+From registry.access.redhat.com/rhel7
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
