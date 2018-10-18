@@ -1,7 +1,7 @@
 #This is for Openshift
 
 #From centos:7
-From scrtach
+From scratch
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
