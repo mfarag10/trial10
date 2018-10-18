@@ -9,7 +9,7 @@ RUN   yum update -y && \
 yum install -y net-tools && \
  yum install -y httpd && \
 
-RUN dnf install -y sudo && \
+RUN yum install -y sudo && \
     adduser userfarag && \
     echo "userfarag ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/userfarag && \
     chmod 0440 /etc/sudoers.d/user
