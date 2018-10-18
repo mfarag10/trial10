@@ -1,11 +1,11 @@
 #This is for Openshift
 
-From centos:7
+#From centos:7
 From scratch
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
-
+CMD ["/bin/bash"]
 RUN  yum update -y && \ 
 yum install -y net-tools && \
 yum install -y httpd && \
