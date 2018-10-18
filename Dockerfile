@@ -26,7 +26,7 @@ RUN chmod -R 777 /home/mohamed.farag-redingtongulf.com/docks/
 RUN chown -R 10001 /home/mohamed.farag-redingtongulf.com/docks
 RUN chown -R 10001 /opt/lampp/
  USER 10001
- CMD run
+ CMD /opt/lampp/xampp start
 #RUN chown -R 10001 /home/mohamed.farag-redingtongulf.com/docks
  
 #  RUN  /home/mohamed.farag-redingtongulf.com/docks/xampp-linux-x64-7.2.2-0-installer.run --mode unattended 
