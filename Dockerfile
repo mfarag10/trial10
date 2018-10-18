@@ -15,7 +15,7 @@ RUN yum install -y sudo && \
     echo "userfarag ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/userfarag && \
     chmod 0440 /etc/sudoers.d/userfarag
 
-RUN su - userfarag -c "touch mine"
+RUN su - userfarag
 
 #CMD ["su", "-", "userfarag", "-c", "/bin/bash"]
 
