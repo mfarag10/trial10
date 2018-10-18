@@ -15,8 +15,8 @@ RUN yum install -y sudo && \
     echo "userfarag ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/userfarag && \
     chmod 0440 /etc/sudoers.d/userfarag
     
-    RUN yum install -y httpd
-    RUN sudo systemctl start httpd
+    #RUN yum install -y httpd
+    RUN  systemctl start httpd
 
 #RUN su - userfarag
 
