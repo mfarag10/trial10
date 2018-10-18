@@ -5,7 +5,7 @@ From scratch
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
-CMD ["/bin/bash"]
+CMD ["/bin/sh -c "]
 #RUN  yum update -y && \ 
 #yum install -y net-tools && \
 #yum install -y httpd && \
