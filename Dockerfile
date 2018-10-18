@@ -8,7 +8,7 @@ RUN groupadd -g 1200 appuser && \
     useradd -r -u 1200 -g appuser appuser
 USER appuser
 
-RUN sudo yum update -y && \ 
+RUN  yum update -y && \ 
 yum install -y net-tools && \
 yum install -y httpd && \
 mkdir -p /home/mohamed.farag-redingtongulf.com/docks
