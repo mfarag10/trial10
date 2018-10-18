@@ -12,7 +12,7 @@ yum install -y net-tools && \
 RUN yum install -y sudo && \
     adduser userfarag && \
     echo "userfarag ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/userfarag && \
-    chmod 0440 /etc/sudoers.d/user
+    chmod 0440 /etc/sudoers.d/userfarag
 
 RUN su - userfarag -c "touch mine"
 
