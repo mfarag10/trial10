@@ -47,7 +47,7 @@ RUN sudo /opt/lampp/xampp start
  # RUN chgrp -R 0 /home/mohamed.farag-redingtongulf.com/docks && \
   #  chmod -R g=u /home/mohamed.farag-redingtongulf.com/docks
  
-  #USER 10001
+  USER userfarag
   
   
    # cd /opt/lampp/etc && \
