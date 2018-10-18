@@ -1,15 +1,15 @@
 #This is for Openshift
 
-#From centos:7
+From centos:7
 From scratch
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
 
-#RUN  yum update -y && \ 
-#yum install -y net-tools && \
-#yum install -y httpd && \
-RUN mkdir -p /home/mohamed.farag-redingtongulf.com/docks
+RUN  yum update -y && \ 
+yum install -y net-tools && \
+yum install -y httpd && \
+ mkdir -p /home/mohamed.farag-redingtongulf.com/docks
 
 #COPY //docks/xampp-linux-x64-7.2.2-0-installer.run .
 
