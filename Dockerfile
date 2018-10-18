@@ -4,9 +4,6 @@ From centos:latest
 #WORKDIR /tmp
 LABEL maintainer="farag@email.com"
 
-RUN groupadd -g 1200 appuser && \
-    useradd -r -u 1200 -g appuser appuser
-USER appuser
 
 RUN  yum update -y && \ 
 yum install -y net-tools && \
@@ -19,6 +16,13 @@ RUN cd /home/mohamed.farag-redingtongulf.com/docks
 
 RUN chmod +x /home/mohamed.farag-redingtongulf.com/docks/xampp-linux-x64-7.2.2-0-installer.run 
   RUN  /home/mohamed.farag-redingtongulf.com/docks/xampp-linux-x64-7.2.2-0-installer.run --mode unattended 
+  
+  RUN chgrp -R 0 /home/mohamed.farag-redingtongulf.com/docks && \
+    chmod -R g=u /home/mohamed.farag-redingtongulf.com/docks && \
+ 
+  USER 10001
+  
+  
    # cd /opt/lampp/etc && \
    # mv httpd.conf httpd.conf.old80 && \
    # chmod +x /opt/lampp/manager-linux-x64.run && \
