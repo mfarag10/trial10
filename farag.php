@@ -1,3 +1,3 @@
 <?php
-echo "hello farag ya gamed asdasdasdasd";
+echo "hello openshift";
 ?>
