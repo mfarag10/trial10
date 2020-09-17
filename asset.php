@@ -5,7 +5,7 @@ fwrite($fp, 'Cats chase');
 fwrite($fp, 'mice');
 fclose($fp);
 
-echo "hello farag" ;
+echo "hello farag00000000" ;
 $servername="mysqldb-farag.apps.ocp4.example.com";
 $username="ose";
 $password="openshift";
