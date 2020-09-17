@@ -1,4 +1,10 @@
 <?php
+
+$fp = fopen('/farag/lidn.txt', 'w');
+fwrite($fp, 'Cats chase');
+fwrite($fp, 'mice');
+fclose($fp);
+
 $servername = "localhost";
 $username = "username";
 $password = "password";
