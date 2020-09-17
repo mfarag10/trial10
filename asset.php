@@ -6,5 +6,16 @@ fwrite($fp, 'mice');
 fclose($fp);
 
 echo "hello farag" ;
+$servername="mysqldb-farag.apps.ocp4.example.com";
+$username="ose";
+$password="openshift";
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
 
 ?>
