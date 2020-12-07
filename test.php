@@ -1,6 +1,6 @@
 <?php
 
-$fp = fopen('/lidn.txt', 'w');
+$fp = fopen('/tmp/lidn.txt', 'w');
 fwrite($fp, 'Cats chase');
 fwrite($fp, 'mice');
 fclose($fp);
