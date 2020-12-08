@@ -35,7 +35,7 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Table MyGuests created successfully";
+  echo "<br>". "Table MyGuests created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
 }
@@ -50,7 +50,7 @@ $sql = "INSERT INTO MyGuests (firstname, lastname, email)
 VALUES ('John', 'Doe', 'john@example.com')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "<br>". "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
