@@ -6,7 +6,7 @@ fwrite($fp, 'mice');
 fclose($fp);
 
 echo "hello farag00000000 \r\n" ;
-$servername="172.30.39.246";
+$servername="172.30.77.105";
 $username="ose";
 $password="openshift";
 $dbname="quotes";
