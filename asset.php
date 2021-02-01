@@ -5,8 +5,8 @@ fwrite($fp, 'Cats chase');
 fwrite($fp, 'mice');
 fclose($fp);
 
-echo "hello farag00000000 \r\n" ;
-$servername="172.30.113.69";
+echo "hello farag00000000500000 \r\n" ;
+$servername="172.30.77.105";
 $username="ose";
 $password="openshift";
 $dbname="quotes";
