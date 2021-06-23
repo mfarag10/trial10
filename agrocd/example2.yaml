@@ -14,7 +14,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: hello-openshift
+        app: hello-openshift2
     spec:
       containers:
         - name: hello-openshift2
