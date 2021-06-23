@@ -9,7 +9,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello-openshift
+      app: hello-openshift2
   template:
     metadata:
       creationTimestamp: null
@@ -17,7 +17,7 @@ spec:
         app: hello-openshift
     spec:
       containers:
-        - name: hello-openshift
+        - name: hello-openshift2
           image: openshift/hello-openshift
           ports:
             - containerPort: 8080
