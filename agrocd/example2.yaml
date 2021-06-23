@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   annotations:
-  name: example2
+  name: example
   
   namespace: farag3
 spec:
