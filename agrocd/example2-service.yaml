@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: example2
+ 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  selector:
+    app: hello-openshift
+  type: ClusterIP
+  sessionAffinity: None
+status:
+  loadBalancer: {}
