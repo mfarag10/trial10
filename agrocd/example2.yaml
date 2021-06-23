@@ -9,15 +9,15 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello-openshift2
+      app: hello-openshift
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: hello-openshift2
+        app: hello-openshift
     spec:
       containers:
-        - name: hello-openshift2
+        - name: hello-openshift
           image: openshift/hello-openshift
           ports:
             - containerPort: 8080
