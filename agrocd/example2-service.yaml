@@ -9,6 +9,6 @@ spec:
       targetPort: 8080
  selector:
     app: hello-openshift
-  type: ClusterIP
-  sessionAffinity: None
+ type: ClusterIP
+ sessionAffinity: None
   
