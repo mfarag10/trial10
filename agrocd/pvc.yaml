@@ -11,5 +11,4 @@ spec:
     requests:
       storage: 2Gi
   storageClassName: gp2
-  volumeMode: Block
 
