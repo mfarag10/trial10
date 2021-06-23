@@ -3,8 +3,8 @@ kind: Route
 metadata:
   namespace: farag3
   labels:
-    app: hello-openshift2
-  name: hello-openshift2
+    app: hello-openshift
+  name: hello-openshift
 spec:
   port:
     targetPort: 8080-tcp
