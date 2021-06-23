@@ -124,7 +124,7 @@ metadata:
               'f:containers':
                 'k:{"name":"cakephp-ex-git"}':
                   'f:image': {}
-  namespace: farag
+  namespace: farag2
   labels:
     app: cakephp-ex-git
     app.kubernetes.io/component: cakephp-ex-git
@@ -148,7 +148,7 @@ spec:
       containers:
         - name: cakephp-ex-git
           image: >-
-            image-registry.openshift-image-registry.svc:5000/farag/cakephp-ex-git@sha256:978c2a62f2523f8793eb506c2bed8cba83bd5aa144676108d705412aa86d8473
+            image-registry.openshift-image-registry.svc:5000/farag2/cakephp-ex-git@sha256:978c2a62f2523f8793eb506c2bed8cba83bd5aa144676108d705412aa86d8473
           ports:
             - containerPort: 8080
               protocol: TCP
