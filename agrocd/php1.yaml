@@ -5,7 +5,7 @@ metadata:
   labels:
     app: fifa
   name: fifa
-  namespace: fifa
+  namespace: farag3
 spec:
   replicas: 10
   selector:
