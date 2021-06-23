@@ -1,13 +1,29 @@
+kind: DeploymentConfig
 apiVersion: v1
-kind: Service
 metadata:
-  name: php
-  labels:
-    tier: backend
+  name: frontend
 spec:
+  template:
+    metadata:
+      labels:
+        name: frontend
+    spec:
+      containers:
+        - name: helloworld
+          image: openshift/origin-ruby-sample
+  replicas: 5
   selector:
-    app: php
-    tier: backend
-  ports:
-  - protocol: TCP
-    port: 9000
+    name: frontend
+  strategy:
+    type: Rolling
+    rollingParams:
+      pre:
+        failurePolicy: Abort
+        execNewPod:
+          containerName: helloworld 
+          command: [ "/usr/bin/command", "arg1", "arg2" ] 
+          env: 
+            - name: CUSTOM_VAR1
+              value: custom_value1
+          volumes:
+            - data 
