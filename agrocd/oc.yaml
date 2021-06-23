@@ -1,0 +1,1 @@
+oc new-app --name=mysqldb --docker-image=registry.redhat.io/rhscl/mysql-57-rhel7 -e MYSQL_USER=ose -e MYSQL_PASSWORD=openshift -e MYSQL_DATABASE=quotes
