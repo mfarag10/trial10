@@ -7,9 +7,9 @@ metadata:
     app.openshift.io/vcs-uri: 'https://github.com/sclorg/cakephp-ex.git'
     deployment.kubernetes.io/revision: '2'
     image.openshift.io/triggers: >-
-      [{"from":{"kind":"ImageStreamTag","name":"cakephp-ex-git:latest","namespace":"farag2"},"fieldPath":"spec.template.spec.containers[?(@.name==\"cakephp-ex-git\")].image","pause":"false"}]
+      [{"from":{"kind":"ImageStreamTag","name":"cakephp-ex-git:latest","namespace":"farag3"},"fieldPath":"spec.template.spec.containers[?(@.name==\"cakephp-ex-git\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
-  selfLink: /apis/apps/v1/namespaces/farag2/deployments/cakephp-ex-git
+  selfLink: /apis/apps/v1/namespaces/farag3/deployments/cakephp-ex-git
   resourceVersion: '53722'
   name: cakephp-ex-git
   uid: 14c61cf9-073c-4de6-9433-c48e52f30ced
@@ -124,7 +124,7 @@ metadata:
               'f:containers':
                 'k:{"name":"cakephp-ex-git"}':
                   'f:image': {}
-  namespace: farag2
+  namespace: farag3
   labels:
     app: cakephp-ex-git
     app.kubernetes.io/component: cakephp-ex-git
@@ -148,7 +148,7 @@ spec:
       containers:
         - name: cakephp-ex-git
           image: >-
-            image-registry.openshift-image-registry.svc:5000/farag2/cakephp-ex-git@sha256:978c2a62f2523f8793eb506c2bed8cba83bd5aa144676108d705412aa86d8473
+            image-registry.openshift-image-registry.svc:5000/farag3/cakephp-ex-git@sha256:978c2a62f2523f8793eb506c2bed8cba83bd5aa144676108d705412aa86d8473
           ports:
             - containerPort: 8080
               protocol: TCP
